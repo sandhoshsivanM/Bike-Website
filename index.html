@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Bike</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="path">
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="thumbnail">
+        <li><img src="images/bike1.png" onclick="big('images/bike1.png');bg('#EA5F31')"></li>
+        <li><img src="images/bike2.png" onclick="big('images/bike2.png');bg('#444140')"></li>
+        <li><img src="images/bike3.png" onclick="big('images/bike3.png');bg('rgba(255,0,0,0.8)')"></li>
+      </div>
+      <div class="big-img">
+        <img src="images/bike3.png" class="big">
+      </div>
+      <div class="content">
+        <p>Let's Ride</p>
+        <h1>Don't Fear Dying Fear Not Living</h1><br>
+        <h5>For Bike Lovers & Bike Riders&#x1F60E.</h5>
+      </div>
+    </div>
+  </body>
+  <script>
+    function big(img){
+      document.querySelector('.big').src=img;
+    }
+    function bg(background){
+      const bg=document.querySelector('.container');
+      bg.style.background = background;
+    }
+  </script>
+</html>

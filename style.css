@@ -1,0 +1,94 @@
+@font-face {
+  src: url(fonts/Kungfont-Regular.otf);
+  font-family: Kungfont-Regular;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Kungfont-Regular',sans-serif;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background: #3fb0ac;
+}
+ul{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 50px;
+}
+ul li a{
+  text-decoration: none;
+  font-family: Kungfont-Regular;
+  font-weight: 600;
+  color: white;
+}
+ul li a:hover{
+  color: black;
+}
+.thumbnail{
+  padding-top:7%;
+}
+.thumbnail li{
+  list-style: none;
+  position: relative;
+  margin-top: 50px;
+
+}
+.thumbnail img{
+  display: block;
+  max-width: 120px;
+  transition: 0.5s;
+}
+.thumbnail img:hover{
+  transform: translateX(30px);
+  transition: 0.5s;
+}
+.big-img img{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  max-width: 500px;
+  max-height: 300px;
+}
+.content{
+  position: absolute;
+  cursor: pointer;
+  max-width: 40%;
+  right: 1%;
+  top: 23%;
+}
+.content p{
+  color: black;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Kungfont-Regular;
+  margin-left: 10px;
+}
+.content h1{
+  font-size: 60px;
+  font-weight: 600;
+  font-family: Kungfont-Regular;
+  color: #dddfd4;
+}
+.content h5{
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  margin-left: 5px;
+}
+.path{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  clip-path: circle(520px at left);
+  background: #f4f4f0;
+}
+.thumbnail li img .ktm{
+  max-width: 800px;
+}
